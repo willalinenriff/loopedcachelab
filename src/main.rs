@@ -1,4 +1,4 @@
-const SORTER: &str = "dns-stub-aef283";
+const SORTER: &str = "dns-stub-eae1c8";
 #[derive(Debug, Clone)]
 struct Item { name: String, score: i32 }
 fn main() {
